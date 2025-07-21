@@ -1,13 +1,11 @@
 import { Outlet, Link } from "react-router-dom";
+import StoreHeader from "../components/StoreHeader";
 
 
 export default function Root() {
     return (
         <>
-            <p>Hello World!</p>
-            <Link to={`/`}>Home</Link>
-            <p>Link</p>
-            <Link to={`store`}>Store</Link>
+            <StoreHeader />
             <div className="contents">
                 <Outlet />
             </div>
