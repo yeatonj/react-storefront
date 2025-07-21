@@ -1,5 +1,10 @@
 export default function Store() {
     return (
-        <p>This is the store page.</p>
+        <>
+            <h2>Products:</h2>
+            <div className="product-cards">
+                
+            </div>
+        </>
     )
 }
