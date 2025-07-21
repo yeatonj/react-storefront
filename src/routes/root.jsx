@@ -6,7 +6,7 @@ export default function Root() {
         <>
             <p>Hello World!</p>
             <Link to={`/`}>Home</Link>
-            <p>Link spacer</p>
+            <p>Link</p>
             <Link to={`store`}>Store</Link>
             <div className="contents">
                 <Outlet />
