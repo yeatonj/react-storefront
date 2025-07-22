@@ -1,3 +1,5 @@
+import "../styles/products.css"
+
 export default function ProductCard({
     details
 }) {
