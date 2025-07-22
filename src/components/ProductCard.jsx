@@ -1,6 +1,8 @@
 import "../styles/products.css"
+import QuantitySelector from "./QuantitySelector";
 
 import { addToCart } from "../CartHelpers"
+import { useState } from "react";
 
 export default function ProductCard({
     details,
@@ -8,16 +10,18 @@ export default function ProductCard({
     cartSetter
 }) {
 
-    function addProduct(addQuantity) {
+    const [purchaseQuantity, setPurchaseQuantity] = useState(1);
+
+    function addProduct() {
         const cartProduct = {
             id:details.id,
             name:details.title,
-            quantity:addQuantity,
+            quantity:purchaseQuantity,
             image:details.image,
             price:details.price
         };
 
-        addToCart(cartProduct, addQuantity, cart, cartSetter);
+        addToCart(cartProduct, purchaseQuantity, cart, cartSetter);
     }
 
     return(
@@ -26,8 +30,12 @@ export default function ProductCard({
             <h4>{details.title}</h4>
             <p>{details.description}</p>
             <p>{details.price}</p>
+            <QuantitySelector 
+                quantity={purchaseQuantity}
+                setQuantity={setPurchaseQuantity}
+            />
             <button onClick={() => {
-                addProduct(1);
+                addProduct();
             }}>Add</button>
         </div>
     )
