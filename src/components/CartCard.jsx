@@ -1,3 +1,5 @@
+import { removeFromCart } from "../CartHelpers";
+
 export default function CartCard({
     details,
     cart,
@@ -13,7 +15,7 @@ export default function CartCard({
             <p>Each: ${details.price}</p>
             <p>Subtotal: ${details.quantity * details.price}</p>
         </div>
-        <button>Remove</button>
+        <button onClick={() => removeFromCart(details, cart, cartSetter)}>Remove</button>
     </div>
     )
 }

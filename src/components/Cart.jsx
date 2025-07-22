@@ -31,6 +31,7 @@ export default function Cart({
                         cart.length === 0 && <p>Cart is empty.</p>
                     }
                 </div>
+                <p>Total: ${cart.reduce((accum, current) => accum + (current.price * current.quantity), 0)}</p>
                 <button>Checkout</button>
             </div>
         </div>

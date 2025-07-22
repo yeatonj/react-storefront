@@ -20,6 +20,7 @@
     animation-duration: 0.4s;
     padding-left: 20px;
     overflow-y: scroll;
+    padding-bottom: 100px;
 }
 
 @keyframes cart-slide {
