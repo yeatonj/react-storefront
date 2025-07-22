@@ -1,0 +1,17 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: aqua;
+}
+
+footer img {
+    width: 1.5em;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
