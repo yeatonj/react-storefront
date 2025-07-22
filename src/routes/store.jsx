@@ -3,7 +3,8 @@ import ProductCard from "../components/ProductCard";
 import "../styles/products.css"
 
 export default function Store({
-    cart
+    cart,
+    cartSetter
 }) {
     const [products, setProducts] = useState(null);
 
