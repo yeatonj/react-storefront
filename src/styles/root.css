@@ -7,3 +7,9 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
