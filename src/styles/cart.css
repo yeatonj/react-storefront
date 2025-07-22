@@ -5,6 +5,8 @@
     height: 100vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.797);
+    animation-name: fade-in;
+    animation-duration: 0.2s;
 }
 
 .cart {
@@ -14,4 +16,26 @@
     top: 0;
     height: 100vh;
     width: 70vw;
+    animation-name: cart-slide;
+    animation-duration: 0.4s;
+}
+
+@keyframes cart-slide {
+    from {
+        translate: 150vw 0;
+    }
+
+    to {
+        translate: 0 0;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    to {
+        background-color: rgba(0, 0, 0, 0.797);
+    }
 }
