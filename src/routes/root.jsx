@@ -6,8 +6,7 @@ import Cart from "../components/Cart";
 
 export default function Root() {
     const [showCart, setShowCart] = useState(false);
-
-
+    const [cart, setCart] = useState([]);
 
     return (
         <>

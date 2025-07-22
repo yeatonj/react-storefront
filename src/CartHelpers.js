@@ -4,6 +4,7 @@
 //     name:
 //     quantity:
 //     image:
+//     price:
 // }
 
 // Assumes that product is a new object to add w/ the same params
