@@ -1,4 +1,5 @@
 import "../styles/cart.css"
+import CartCard from "./CartCard";
 
 export default function Cart({
     show,
@@ -17,7 +18,14 @@ export default function Cart({
                 <h2>Cart:</h2>
                 <div className="cart-cards">
                     {
-                        cart.length > 0 && <p>Items!</p>
+                        cart.length > 0 && cart.map(item => 
+                            <CartCard 
+                                key={item.id}
+                                details={item}
+                                cart={cart}
+                                cartSetter={cartSetter}
+                            />
+                        )
                     }
                     {
                         cart.length === 0 && <p>Cart is empty.</p>

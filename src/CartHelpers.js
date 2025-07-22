@@ -7,10 +7,11 @@
 //     price:
 // }
 
-// Assumes that product is a new object to add w/ the same params
+// Assumes that product is a new object to add
 
 
 function addToCart(product, quantity, cart, cartSetter) {
+    console.log(cart);
     const newCart = [...cart];
     // Already in cart?
     for (let i = 0; i < newCart.length; i++) {
@@ -20,8 +21,16 @@ function addToCart(product, quantity, cart, cartSetter) {
             return;
         }
     }
-    // We know it's not in the cart, just add it!
-    newCart.push(product);
+    // We know it's not in the cart, so add it!
+    console.log(product)
+    const newProd = {
+        id:product.id,
+        name:product.name,
+        quantity:quantity,
+        image:product.image,
+        price:product.price
+    }
+    newCart.push(newProd);
     cartSetter(newCart);
     return;
 }

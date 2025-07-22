@@ -16,7 +16,7 @@ export default function Root() {
                 displayCartCallback={() => setShowCart(true)}
             />
             <div className="contents">
-                <Outlet />
+                <Outlet context={[cart, setCart]}/>
             </div>
             <StoreFooter />
             <Cart 

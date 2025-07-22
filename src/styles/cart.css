@@ -19,6 +19,7 @@
     animation-name: cart-slide;
     animation-duration: 0.4s;
     padding-left: 20px;
+    overflow-y: scroll;
 }
 
 @keyframes cart-slide {

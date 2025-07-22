@@ -2,15 +2,32 @@
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
 }
 
 .product-card {
     border-radius: 20px;
-    border: 1px solid black;
-    padding: 0px 10px 10px 10px;
+    border: 1px solid #000000;
+    padding: 10px 10px 10px 10px;
 }
 
 .product-card img {
-    width: 100%;
+    width: 90%;
+    height: auto;
+}
+
+.cart-card {
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    margin-bottom: 20px;
+}
+
+.cart-card img {
+    width: 100px;
     height: auto;
 }
