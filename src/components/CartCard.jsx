@@ -1,4 +1,3 @@
-import { use } from "react";
 import { removeFromCart, editCartQuantity } from "../CartHelpers";
 
 import QuantitySelector from "./QuantitySelector";

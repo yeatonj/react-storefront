@@ -11,7 +11,7 @@
 
 
 function addToCart(product, quantity, cart, cartSetter) {
-    console.log(cart);
+
     const newCart = [...cart];
     // Already in cart?
     for (let i = 0; i < newCart.length; i++) {
@@ -22,7 +22,6 @@ function addToCart(product, quantity, cart, cartSetter) {
         }
     }
     // We know it's not in the cart, so add it!
-    console.log(product)
     const newProd = {
         id:product.id,
         name:product.name,
