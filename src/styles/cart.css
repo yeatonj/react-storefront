@@ -18,6 +18,7 @@
     width: 70vw;
     animation-name: cart-slide;
     animation-duration: 0.4s;
+    padding-left: 20px;
 }
 
 @keyframes cart-slide {
@@ -38,4 +39,21 @@
     to {
         background-color: rgba(0, 0, 0, 0.797);
     }
+}
+
+.close {
+    border: none;
+    background-color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 0;
+    display: flex;
+}
+
+.close:hover {
+    background-color: gray;
 }
